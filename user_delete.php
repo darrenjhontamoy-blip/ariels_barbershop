@@ -1,0 +1,1 @@
+<form method="POST" action="user_delete.php" style="display:inline-block">
