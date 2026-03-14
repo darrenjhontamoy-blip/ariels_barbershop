@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* =========================
+   GLOBAL BACKGROUND
+========================= */
+body {
+    min-height: 100vh;
+    background:
+        linear-gradient(
+            rgba(255,255,255,0.12),
+            rgba(10,26,42,0.45)
+        ),
+        linear-gradient(135deg, #0a1a2a, #1b3a4b);
+}
+
+/* =========================
+   AUTH WRAPPER (LOGIN + REGISTER)
+========================= */
+.auth-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CARD */
+.auth-card {
+    width: 900px;
+    height: 540px;
+    background: #ffffff;
+    border-radius: 18px;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0 35px 70px rgba(0,0,0,0.45);
+}
+
+/* LEFT */
+.auth-left {
+    width: 45%;
+    background: linear-gradient(135deg, #0a1a2a, #1b3a4b);
+    color: #ffffff;
+    padding: 70px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.auth-left h1 {
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 15px;
+}
+
+.auth-left p {
+    font-size: 15px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* RIGHT */
+.auth-right {
+    width: 55%;
+    padding: 65px 60px;
+    position: relative;
+}
+
+/* BACK LINK */
+.back-link {
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    font-size: 14px;
+    color: #555;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* TEXT */
+.auth-right h2 {
+    font-size: 30px;
+    margin-bottom: 6px;
+    color: #111;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 35px;
+}
+
+/* FORM */
+.auth-right form input,
+.auth-right form select {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.auth-right form input:focus,
+.auth-right form select:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37,99,235,0.15);
+}
+
+/* BUTTON */
+.auth-right form button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(90deg, #b11226, #0a3d62);
+    border: none;
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.auth-right form button:hover {
+    opacity: 0.95;
+}
+
+/* ERROR & SUCCESS */
+.error {
+    background: #ffecec;
+    color: #b11226;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.success {
+    background: #e6fffa;
+    color: #065f46;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* REGISTER TEXT */
+.register-text {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+.register-text a {
+    color: #2563eb;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.register-text a:hover {
+    text-decoration: underline;
+}
